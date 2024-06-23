@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #2980B9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2980B9, #6DD5FA, #2980B9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2980B9, #6DD5FA 50%, #2980B9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  padding: 15px;
+  color: #fff;
+}
+
+.header .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.header .title i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.header .title span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header .description {
+  font-size: 13px;
+}
+
+.content {
+  padding: 15px;
+}
+
+.content .card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card .input-task {
+  display: flex;
+  gap: 4px;
+}
+
+.content .card .input-control {
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 2px solid #334155;
+  outline: 0;
+}
+
+.content .card .input-task button {
+  border: 0;
+  padding: 0 7px;
+  background-color: #15803d;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 300ms;
+  border-radius: 0;
+  border-radius: 5px;
+}
+
+.content .card .input-task button:hover {
+  background-color: #166534;
+}
+
+.card .task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .text-edit {
+  background-color: #f97316;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 300ms;
+}
+
+.card .text-edit:hover {
+  background-color: #f85c00;
+}
+
+.card .text-delete {
+  background-color: #ef4444;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 300ms;
+}
+
+.card .text-delete:hover {
+  background-color: #d32f2f;
+}
+
+.task-item.done span {
+  text-decoration: line-through;
+  color: #cbd5e1;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
